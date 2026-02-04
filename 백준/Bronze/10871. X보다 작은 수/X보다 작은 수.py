@@ -1,16 +1,6 @@
 
-a, x = input().split()
-x= int(x)
+a, x = map(int, input().split())
 list = list(map(int, input().split(" ")))
-
-def findUnderList(x, list):
-    result = []
-    for data in list:
-        if data < x:
-            result.append(data)
-    
-    new_result = " ".join(map(str, result))
-    
-    print(new_result)
-
-findUnderList(x, list)
+for i in range(a):
+    if list[i] < x:
+        print(list[i], end=" ")
