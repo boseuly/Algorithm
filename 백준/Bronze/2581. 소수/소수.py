@@ -1,6 +1,5 @@
 import sys
 M,N = map(int, sys.stdin.read().split())
-M, N = int(M), int(N)
 # 2~제곱근의 수까지 나누었을 때 나누어지는 수는 소수가 아니다. 
 # 소수인지 검증하는 함수
 # 소수라면 list에 값을 넣는다. 
